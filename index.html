@@ -3,15 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IEEE ORC 2025</title>
+    <title>Robotics Competition</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to top right, rgb(29,65,88) 30%, rgb(31,103,145));
+            color: white;
+        }
+        .header {
+            width: 100%;
+            text-align: center;
+            /* background-color: #000; */
+            padding: 10px 0;
+            color: yellow;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+        .logo-container {
+            margin: 20px 0;
+        }
+        .logo-container img {
+            width: 200px;
+            height: auto;
+        }
+        .logo-container h1 {
+            margin-top: 10px;
+            font-size: 32px;
+            color: yellow;
+        }
+        .announcement {
+            background-color: #d3d3d3;
+            color: black;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 0;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 50px;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+            color: yellow;
+        }
+        .rules-card {
+            background-color: #d3d3d3;
+            color: black;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .rules-card h3 {
+            margin: 10px 0;
+            color: black;
+            grid-column: span 2;
+            text-align: center;
+            font-weight: bold;
+        }
+        .rules-card a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .rules-card a:hover {
+            background-color: #0056b3;
+        }
+        .rules-card .gridrunner {
+            background-color: #001f3f;
+        }
+        .rules-card .gridrunner-only {
+            grid-column: span 2;
+            justify-self: center;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
         <a href="#about">About</a>
         <a href="#rules">Rules</a>
-        <div class="logo">IEEE ORC 2025</div>
+        <div class="logo">Robotics Competition</div>
         <a href="#schedule">Schedule</a>
         <a href="#contact">Contact</a>
     </div>
